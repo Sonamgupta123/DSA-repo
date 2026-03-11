@@ -1,0 +1,37 @@
+for(int i=1;i<n;i++){
+      for(int j=1 ; j<n ;j++){
+        cout<<"*";
+        cout<<j;//print 1234 in square
+      }
+      cout<<endl;
+    } // this is for square star print
+
+ for(int i=1 ; i<=n; i++){
+        char ch ='A';
+        for(int j=1 ;j<=n ;j++){
+            cout<<ch;
+            ch=ch+1;
+        } // this for ABCD in square
+
+//for 123456789 in square code:
+ int num = 1;
+   
+    for(int i=1 ; i<=n; i++){
+        for(int j=1 ;j<=n ;j++){
+            cout<<num;
+           num++;
+        }   
+
+  for(int i=1 ; i<=n; i++){
+        for(int j=1 ;j<=i ;j++){
+            cout<<j;// give 1 12 123 type triangle
+          //  cout<<i;//give 122 333 typr triangle
+        }//for right triangle    
+
+for (int i=0;i<n;i++){            1 21 321 type triangle
+        for(int j=i;j>0;j--){
+            cout<<j;
+        }
+        cout<<endl;
+    }                
+       
