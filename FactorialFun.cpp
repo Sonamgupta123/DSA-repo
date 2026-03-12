@@ -14,8 +14,14 @@ int sum(int n){
     }
    return sum ;
 }
+int sum1(int a, int b){
+    return a+b;
+}
 int main(){
+    int x = 5 , y = 4;
+    sum1(x,y);
     cout<<"factorial is "<<fact(4)<<endl;
     cout<<"sum is "<<sum(10)<<endl;
+    cout<<"sum1 is "<<sum1(x,y)<<endl;
     return 0;
 }
