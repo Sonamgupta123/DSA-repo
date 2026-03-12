@@ -17,12 +17,12 @@ int sum(int n){
 int sum1(int a, int b){
     return a+b;
 }
-int chnageX(int x){
+void chnageX(int x){
     x = 2*x;
     cout<<"x = "<<x<<endl;
 }
 int main(){
-    int a = 5 , b = 4 x = 5;
+    int a = 5 , b = 4 ,x = 5;
     
     sum1(a,b);
     cout<<"factorial is "<<fact(4)<<endl;
