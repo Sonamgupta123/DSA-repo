@@ -12,3 +12,16 @@ n factorial , fibnocci etc
 O(n^2)/O(n^3)
 loop ke andar loop 
 bubble short / selection / insertion short
+
+o(logn)
+binary search etc
+
+o(nlogn)
+greedy alogo , merge sort etc
+
+o(2^n) - exponential 
+recursion etc
+
+o(n!) without optimi
+//recursion ,permutation etc
+// n queens 
