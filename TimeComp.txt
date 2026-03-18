@@ -1,0 +1,14 @@
+Big O - called wrost case and upper bound 
+
+O(1) - constant 
+ye jisme koi loop kuch use nhi ho raha unke liye hai
+if-else bhi treat as a constant
+sum , etc
+
+o(n)- Linear
+jisme loop use ho raha ho
+n factorial , fibnocci etc
+
+O(n^2)/O(n^3)
+loop ke andar loop 
+bubble short / selection / insertion short
