@@ -22,8 +22,8 @@ using namespace std;
         return ans;
     }
 int main(){
-    double x = 2;
-    int n = 2;
+    double x = 3;
+    int n = 5;
    cout<<myPow(x,n)<<endl;
     return 0;
 }
