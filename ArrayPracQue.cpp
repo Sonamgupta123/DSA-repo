@@ -5,7 +5,7 @@ using namespace std;
         if(x== 0) return 0.0;
         if(x==1) return 1.0;
         if(x== -1 && n%2==0) return 1.0;
-        if(x== -1 && n%2 !=0) return -1.0;
+        if(x== -1 && n%2 !=0) return -1.0; // this code is run without this upper line as well
         long binForm = n;
         if(n<0){
             x = 1/x;
