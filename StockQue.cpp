@@ -13,6 +13,6 @@ return maxProfit;
 }
 int main(){
     vector<int> prices = {3,4,5,6,7};
-    cout<<maxProfit(prices)<<endl;
+    cout<<"maximum profit after buying ans selling stock is "<<maxProfit(prices)<<endl;
     return 0;
 }
