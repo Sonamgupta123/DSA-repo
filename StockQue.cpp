@@ -11,6 +11,7 @@ int maxProfit(vector<int>& prices){
 return maxProfit;
 }
 int main(){
-    vector<int> prices = {}
+    vector<int> prices = {3,4,5,6,7};
+    cout<<maxProfit(prices)<<endl;
     return 0;
 }
