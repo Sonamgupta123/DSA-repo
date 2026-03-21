@@ -9,7 +9,7 @@ int maxArea(vector<int>& height) {
                 int ht = min(height[i],height[j]);
                 int currWater = w*ht;
 
-                maxWater = min(maxWater,currWater);
+                maxWater = max(maxWater,currWater);
             }
         }
         return maxWater;
