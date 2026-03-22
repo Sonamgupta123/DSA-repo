@@ -6,16 +6,22 @@ vector<int> productExceptSelf(vector<int>& nums) {
     vector<int> ans(n,1);
         for(int i =0 ; i<n;i++){
             int product = 1;
-            for(j=0; j<n;j++){
+            for(int j=0; j<n;j++){
                 if(i!=j){
-               ans *= nums[j];
+               product*= nums[j];
                 }
             }
+            ans[i]= product;
         }
         return ans;
     }
 int main(){
-    vector<int> nums = {1,2,3,4}
-    cout<<productExceptSelf(nums)<<endl;
+    vector<int> nums = {1,2,3,4};
+      vector<int> res = productExceptSelf(nums);
+
+    for(int x : res){
+        cout << x << " ";
+    }
+
     return 0;
 }
