@@ -8,10 +8,9 @@ vector<int> productExceptSelf(vector<int>& nums) {
             int product = 1;
             for(j=0; j<n;j++){
                 if(i!=j){
-               product *= nums[j];
+               ans *= nums[j];
                 }
             }
-               ans[i] = product;
         }
         return ans;
     }
