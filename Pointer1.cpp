@@ -10,5 +10,7 @@ int main(){
     cout<< &a <<endl;
     cout<< &ptr<<endl;
     cout<< parptr<<endl;
+    cout<< *(&a) <<endl;
+     cout<<*(ptr)<<endl;// give value at this address
     return 0;
 }
