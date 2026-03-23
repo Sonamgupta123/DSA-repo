@@ -12,5 +12,8 @@ int main(){
     cout<< parptr<<endl;
     cout<< *(&a) <<endl;
      cout<<*(ptr)<<endl;// give value at this address
+
+     int *ptr3 = NULL;
+     cout<<ptr3<<endl;
     return 0;
 }
