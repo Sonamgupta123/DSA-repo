@@ -18,8 +18,9 @@ int binarySearch(vector<int> arr , int tar){
 int main (){
     vector<int> arr1 = {-1,0,3,4,5,9,12};
     int tar1 = 12;
-   cout<< "target is at index"<<binarySearch(arr1,tar1)<<endl;
+//    cout<< "target is at index"<<binarySearch(arr1,tar1)<<endl;
     vector<int> arr2 = {-1,0,3,5,9,12};
     int tar12 = 0;
+    cout<< "target is at index"<<binarySearch(arr2,tar2)<<endl;
     return 0;
 }
