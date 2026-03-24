@@ -20,7 +20,7 @@ int main (){
     int tar1 = 12;
 //    cout<< "target is at index"<<binarySearch(arr1,tar1)<<endl;
     vector<int> arr2 = {-1,0,3,5,9,12};
-    int tar12 = 0;
-    cout<< "target is at index"<<binarySearch(arr2,tar2)<<endl;
+    int tar2 = 0;
+    cout<< "target is at index "<<binarySearch(arr2,tar2)<<endl;
     return 0;
 }
