@@ -3,6 +3,7 @@
 #include<vector>
 using namespace std;
 int search(vector<int>& nums, int target) {
+        int st =  0 , end = num.size()-1;
         
     }
 int main(){
