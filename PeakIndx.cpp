@@ -18,6 +18,6 @@ using namespace std;
     }
 int main(){
     vector<int> arr = {0,3,8,9,5,2};
-    cout<< peakIndexInMountainArray(arr)<<endl;
+    cout<<"highest/ peak value at index "<< peakIndexInMountainArray(arr)<<endl;
     return 0;
 }
