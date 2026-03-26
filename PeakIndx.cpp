@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
  int peakIndexInMountainArray(vector<int>& arr) {
-        int st = 1 , end = arr.size()-2;
+        int st = 1 , end = arr.size()-2; // ye isliye kuki start = 0 and end n-1 kabhi bhi peak value ho hi nhi skta
         while(st<=end){
             int mid = st + (end-st)/2;
             if(arr[mid-1]<arr[mid]>arr[mid+1]){
