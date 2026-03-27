@@ -37,6 +37,22 @@ void selectionSort(int arr[] , int n){
     swap(arr[i], arr[smallestIndx]);
  }
 }
+
+
+//insertion sort 
+//assume karte hai ki kuch part sorted hai and value le kar usse correct position pr place karte hai
+void insertionSort(int arr , int n){
+for(int i = 1 ;i<n;i++){
+    int curr = arr[i];
+    int prev = i-1;
+    while(prev>=0 && arr[prev]>curr){
+    arr[prev+1] = arr[prev];
+    prev--;
+    }
+    arr[prev+1] = curr; // placing the curr el in its crrect position
+}
+}
+
 int main(){
     int n = 5;
     int arr[] = {4,1,5,2,3};
