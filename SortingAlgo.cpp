@@ -41,7 +41,7 @@ void selectionSort(int arr[] , int n){
 
 //insertion sort 
 //assume karte hai ki kuch part sorted hai and value le kar usse correct position pr place karte hai
-void insertionSort(int arr , int n){
+void insertionSort(int arr[] , int n){
 for(int i = 1 ;i<n;i++){
     int curr = arr[i];
     int prev = i-1;
@@ -56,8 +56,9 @@ for(int i = 1 ;i<n;i++){
 int main(){
     int n = 5;
     int arr[] = {4,1,5,2,3};
-    bubbleShort(arr,n);
+    insertionSort(arr,n);
+    //bubbleShort(arr,n);
     printArray(arr,n);
-    selectionSort(arr,n);
+   // selectionSort(arr,n);
     return 0;
 }
