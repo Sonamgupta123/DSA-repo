@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-
+#include<algorithm>
 using namespace std;
 void sortColors(vector<int>& nums) {
         // sort using bruteforce apporoch
@@ -8,6 +8,9 @@ void sortColors(vector<int>& nums) {
     }
 int main(){
     vector<int> nums = {0,1,2,1,2,1,0,0,2};
-    cout<<sortColors(nums)<<endl;
+  sortColors(nums);
+  for(int x :nums){
+    cout<<x<<" ";
+  }
     return 0;
 }
