@@ -26,9 +26,27 @@ void sortColors(vector<int>& nums) {
             nums[idx++] = 2;
         }
     }
+     void sortColors2(vector<int>& nums) {
+        int n = nums.size();
+        int low = 0 ,mid = 0 , high = n-1;
+        while(mid<=high){
+            if(nums[mid]==0){
+                swap(nums[low] , nums[mid]);
+                mid++;
+                low++;
+            }else if (nums[mid] == 1){
+                mid++;
+            }else{
+                swap(nums[high],nums[mid]);
+                high--;
+            }
+        }
+    }
 int main(){
     vector<int> nums = {0,1,2,1,2,1,0,0,2};
-  sortColors(nums);
+  //sortColors(nums);
+   //sortColors1(nums);
+    sortColors2(nums);
   for(int x :nums){
     cout<<x<<" ";
   }
