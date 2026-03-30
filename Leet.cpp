@@ -26,3 +26,13 @@ bool canBeEqual(string s1, string s2) {
 
     return (even1 == even2 && odd1 == odd2);
 }
+int main(){
+    string s1 = "abcdba" , s2 = "cabdab";
+
+    if(canBeEqual(s1 , s2)){
+        cout<<"true";
+    }else{
+        cout<<"false";
+    }
+    return 0;
+}
