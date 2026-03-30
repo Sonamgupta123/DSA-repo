@@ -1,6 +1,7 @@
 //ek hi array ke pattern ya alag alag pattern like 123 132 213 231 312 321 etc
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 void nextPermutation(vector<int>& A) {
         int pivot = -1 , n= A.size();
