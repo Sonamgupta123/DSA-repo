@@ -8,6 +8,8 @@ int main(){
      l.push_back(2);
       l.push_back(3);
       l.push_front(4);
+      l.pop_back();
+      l.pop_front();
        for(int val : l){
         cout<<val<<" ";
        }
