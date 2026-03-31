@@ -7,6 +7,7 @@ int main(){
     l.push_back(1);
      l.push_back(2);
       l.push_back(3);
+      l.push_front(4);
        for(int val : l){
         cout<<val<<" ";
        }
