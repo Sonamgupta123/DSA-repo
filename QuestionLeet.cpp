@@ -80,5 +80,12 @@ int main(){
     vector<int> healths = {2,17,9,15,10};
     string directions = "RRRRR";
 
+    vector<int> ans = survivedRobotsHealths(positions, healths, directions);
+
+    // print result
+    for(int x : ans){
+        cout << x << " ";
+    }
+
     return 0;
 }
