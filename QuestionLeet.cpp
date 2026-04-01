@@ -5,5 +5,8 @@ using namespace std;
         
     }
 int main(){
+    vector<int> positions = {};
+    vector<int> healths = {};
+    string directions = "";
     return 0;
 }
