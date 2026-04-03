@@ -73,5 +73,7 @@ int main() {
     vector<int> robots = {10,2};
     vector<int> distance = {5,1};
     vector<int> walls = {5,2,7};
+    int ans = maxWalls(robots,distance,walls);
+    cout<<ans<<endl;
     return 0;
 }
