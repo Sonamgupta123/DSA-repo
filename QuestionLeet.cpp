@@ -41,7 +41,6 @@ int countWalls(vector<int>& walls, int l, int r) {
         }
 
         vector<vector<int>> dp(n, vector<int>(2, 0));
-
        
         for(int d = 0; d < 2; d++) {
             dp[0][d] = countWalls(walls, intervals[0][d].first, intervals[0][d].second);
