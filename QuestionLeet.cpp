@@ -1,9 +1,9 @@
 #include<iostream>
-#include<vector>
-#include<algorithm>
-#include<climits>
-using namespace std;
 
+using namespace std;
+ string decodeCiphertext(string encodedText, int rows) {
+        
+    }
 
 int main() {
     
