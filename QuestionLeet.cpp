@@ -35,6 +35,11 @@ using namespace std;
     }
 
 int main() {
-    
+     string encodedText = "ch ie pr";
+    int rows = 3;
+     string ans = decodeCiphertext(encodedText, rows);
+
+    cout << ans;
+
     return 0;
 }
