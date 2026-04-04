@@ -25,8 +25,12 @@ using namespace std;
                 i++;
                 j++;
             }
-        }
+         }
+         // remove trailing spaces
+         while(!result.empty() && result.back() == ' ')
+            result.pop_back();
 
+         return result;
     }
 
 int main() {
