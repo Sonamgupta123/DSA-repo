@@ -1,5 +1,4 @@
 #include<iostream>
-
 using namespace std;
  string decodeCiphertext(string encodedText, int rows) {
         if(rows == 0) return "";
