@@ -17,6 +17,15 @@ using namespace std;
         }
 
         string result = "";
+         // traverse diagonally
+        for(int start = 0; start < cols; start++) {
+            int i = 0, j = start;
+            while(i < rows && j < cols) {
+                result += mat[i][j];
+                i++;
+                j++;
+            }
+        }
 
     }
 
