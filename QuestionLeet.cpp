@@ -12,10 +12,10 @@ using namespace std;
         }
 
         return (x == 0 && y == 0);
-
+    }
 int main() {
     string moves = "UDLR";
- bool  ans = judgeCircle(string);
+ bool  ans = judgeCircle();
   if(ans){
     cout<<"true"<<" ";
   }else{
