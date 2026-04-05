@@ -16,6 +16,10 @@ using namespace std;
 int main() {
     string moves = "UDLR";
  bool  ans = judgeCircle(string);
- cout<<
+  if(ans){
+    cout<<"true"<<" ";
+  }else{
+    cout<<"false"<<" ";
+  }
     return 0;
 }
