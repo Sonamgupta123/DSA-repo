@@ -14,7 +14,7 @@ using namespace std;
         return (x == 0 && y == 0);
 
 int main() {
-    
+    string moves = "UDLR";
 
     return 0;
 }
