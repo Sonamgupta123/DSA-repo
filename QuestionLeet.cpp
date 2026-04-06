@@ -1,5 +1,7 @@
 #include<iostream>
 #include<vector>
+#include<set>
+#include<algorithm>
 using namespace std;
   int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {
         
@@ -43,6 +45,6 @@ int main() {
   vector< vector<int>> obstacles = {{2,4}};
   int ans = robotSim(commands,obstacles);
   cout<<ans<<endl;
-  
+
     return 0;
 }
