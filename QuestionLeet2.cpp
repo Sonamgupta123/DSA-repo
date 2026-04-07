@@ -52,6 +52,12 @@ int main(){
     vector<int> pos = getPos();
     cout << pos[0] << " " << pos[1] << endl; // 4 0
     cout << getDir() << endl; // East
+ step(2);
+    step(1);
+    step(4);
 
+    pos = getPos();
+    cout << pos[0] << " " << pos[1] << endl; // 1 2
+    cout << getDir() << endl; // West
     return 0;
 }
