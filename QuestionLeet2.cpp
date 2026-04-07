@@ -42,5 +42,16 @@ string getDir() {
 }
 
 int main(){
+      w = 6; 
+    h = 3;
+    cycle = 2 * (w + h) - 4;
+
+    step(2);
+    step(2);
+
+    vector<int> pos = getPos();
+    cout << pos[0] << " " << pos[1] << endl; // 4 0
+    cout << getDir() << endl; // East
+
     return 0;
 }
