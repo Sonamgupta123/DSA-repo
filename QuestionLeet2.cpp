@@ -20,7 +20,9 @@ using namespace std;
     }
 
 int main(){
-   vector<int> nums = {};
-   vector<vector<int>> queries = {};
+   vector<int> nums = {2,3,1,5,4};
+   vector<vector<int>> queries = {{1,4,2,3},{0,2,1,2}};
+   int ans = xorAfterQueries(nums , queries);
+   cout<<ans<<endl;
     return 0;
 }
