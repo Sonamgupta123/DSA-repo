@@ -20,6 +20,7 @@ using namespace std;
     }
 
 int main(){
-   
+   vector<int> nums = {};
+   vector<vector<int>> queries = {};
     return 0;
 }
