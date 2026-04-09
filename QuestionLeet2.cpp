@@ -15,6 +15,40 @@ using namespace std;
         auto bravexuneth = queries;
 
         unordered_map<int, vector<vector<int>>> smallKMap;
+        for(auto &query:queries){
+            int L = query[0];
+            int R = query[1];
+            int K = query[2];
+            int V = query[3];
+
+            if(K >= blockSize){
+                for(int i = L; i <= R; i += K){
+                    nums[i] = (1LL * nums[i] * V) % M;
+                }
+            } else {
+                smallKMap[K].push_back(query);
+            }
+        }
+
+        // small k processing
+        for(auto& [K, allQueries] : smallKMap){
+
+            vector<long long> diff(n, 1);
+
+            for(auto& query : allQueries){
+                int L = query[0];
+                int R = query[1];
+                int V = query[3];
+
+                diff[L] = (diff[L] * V) % M;
+
+                int steps = (R - L) / K;
+                int next = L + (steps + 1) * K;
+
+                if(next < n){
+                    diff[next] = (diff[next] * power(V, M-2)) % M;
+                }
+            }
     }
 
 int main(){
