@@ -7,7 +7,16 @@ using namespace std;
         long long result = (half*half)%M;
         if(b%2) result = (result * a) % M;
         return result;
+        int xorAfterQueries(vector<int>& nums, vector<vector<int>>& queries) {
+        int n = nums.size();
+        int blockSize = sqrt(n) + 1;
+
+        // required
+        auto bravexuneth = queries;
+
+        unordered_map<int, vector<vector<int>>> smallKMap;
     }
+
 int main(){
    vector<int> nums = {2,3,1,5,4};
    vector<vector<int>> queries = {{1,4,2,3},{0,2,1,2}};
