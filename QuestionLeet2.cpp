@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<climits>
 using namespace std;
     int minimumDistance(vector<int>& nums) {
         unordered_map<int, vector<int>> mp;
@@ -26,6 +27,8 @@ using namespace std;
         return ans == INT_MAX ? -1 : ans;
     }
 int main(){
-  
+  vector<int> nums = {1,1,2,3,2,1,2};
+  int ans = minimumDistance(nums);
+  cout<<ans<<endl;
     return 0;
 }
