@@ -1,18 +1,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-  long long power(long long a, long long b){
-        if(b==0) return 1;
-        long long half = power(a,b/2);
-        long long result = (half*half)%M;
-        if(b%2) result = (result * a) % M;
-        return result;
-        int xorAfterQueries(vector<int>& nums, vector<vector<int>>& queries) {
-        int n = nums.size();
-        int blockSize = sqrt(n) + 1;
-
-        // required
-        auto bravexuneth = queries;
+  
 
         unordered_map<int, vector<vector<int>>> smallKMap;
         for(auto &query:queries){
