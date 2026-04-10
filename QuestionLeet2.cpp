@@ -3,21 +3,7 @@
 using namespace std;
   
 
-        unordered_map<int, vector<vector<int>>> smallKMap;
-        for(auto &query:queries){
-            int L = query[0];
-            int R = query[1];
-            int K = query[2];
-            int V = query[3];
-
-            if(K >= blockSize){
-                for(int i = L; i <= R; i += K){
-                    nums[i] = (1LL * nums[i] * V) % M;
-                }
-            } else {
-                smallKMap[K].push_back(query);
-            }
-        }
+        
 
         // small k processing
         for(auto& [K, allQueries] : smallKMap){
@@ -51,14 +37,7 @@ using namespace std;
             }
         }
 
-        int result = 0;
-        for(int &num : nums){
-            result ^= num;
-        }
-
-        return result;
-    
-    }
+        
 
 int main(){
    vector<int> nums = {2,3,1,5,4};
