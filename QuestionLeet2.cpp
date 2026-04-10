@@ -24,19 +24,7 @@ using namespace std;
                     diff[next] = (diff[next] * power(V, M-2)) % M;
                 }
             }
-             // prefix over step K
-            for(int i = 0; i < n; i++){
-                if(i - K >= 0){
-                    diff[i] = (diff[i] * diff[i - K]) % M;
-                }
-            }
-
-            // apply
-            for(int i = 0; i < n; i++){
-                nums[i] = (1LL * nums[i] * diff[i]) % M;
-            }
-        }
-
+           
         
 
 int main(){
