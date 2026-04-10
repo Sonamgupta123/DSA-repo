@@ -5,25 +5,7 @@ using namespace std;
 
         
 
-        // small k processing
-        for(auto& [K, allQueries] : smallKMap){
-
-            vector<long long> diff(n, 1);
-
-            for(auto& query : allQueries){
-                int L = query[0];
-                int R = query[1];
-                int V = query[3];
-
-                diff[L] = (diff[L] * V) % M;
-
-                int steps = (R - L) / K;
-                int next = L + (steps + 1) * K;
-
-                if(next < n){
-                    diff[next] = (diff[next] * power(V, M-2)) % M;
-                }
-            }
+       
            
         
 
