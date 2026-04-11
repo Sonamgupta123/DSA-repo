@@ -15,6 +15,14 @@ using namespace std;
             if (mp[val].size() > 3) {
                 mp[val].pop_front();
             }
+              if (mp[val].size() == 3) {
+                int dist = 2 * (mp[val].back() - mp[val].front());
+                ans = min(ans, dist);
+            }
+        }
+        
+        return (ans == INT_MAX) ? -1 : ans;
+    }
 int main(){
  
     return 0;
