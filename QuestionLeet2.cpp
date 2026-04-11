@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<climits>
+#include<deque>
 #include <unordered_map>
 using namespace std;
     int minimumDistance(vector<int>& nums) {
