@@ -24,6 +24,8 @@ using namespace std;
         return (ans == INT_MAX) ? -1 : ans;
     }
 int main(){
- 
+ vector<int> nums = {1,2,1,1,3};
+ int ans = minimumDistance(nums);
+ cout<<ans<<endl;
     return 0;
 }
