@@ -48,6 +48,8 @@ int dist(int a, int b) {
     }
    
 int main(){
- 
+  string word = "HAPPY";
+  int ans = minimumDistance(word);
+  cout<<ans<<endl;
     return 0;
 }
