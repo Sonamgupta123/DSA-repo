@@ -17,6 +17,10 @@ using namespace std;
     }
    
 int main(){
- 
+ vector<int> nums = {};
+ int target = ;
+ int start = ;
+ int ans =getMinDistance(nums, target,start);
+ cout<<ans<<endl;
     return 0;
 }
