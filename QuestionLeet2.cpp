@@ -7,23 +7,7 @@ using namespace std;
 
         
        
-            
-            for (int l = 0; l <= 26; l++) {
-                for (int r = 0; r <= 26; r++) {
-                    if (dp[l][r] == INT_MAX) continue;
-                    
-                    // move left finger
-                    newdp[curr][r] = min(newdp[curr][r],
-                                         dp[l][r] + dist(l, curr));
-                    
-                    // move right finger
-                    newdp[l][curr] = min(newdp[l][curr],
-                                         dp[l][r] + dist(r, curr));
-                }
-            }
-            
-            dp = newdp;
-        }
+          
         
         int ans = INT_MAX;
         for (int l = 0; l <= 26; l++) {
