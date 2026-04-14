@@ -37,7 +37,7 @@ long long minimumTotalDistance(vector<int>& robot, vector<vector<int>>& factory)
     }
    
 int main(){
- vector<int> robot = {};
- vector<vector<int>> factory = {{}};
+ vector<int> robot = {1,-1};
+ vector<vector<int>> factory = {{-2,1},{2,1}};
     return 0;
 }
