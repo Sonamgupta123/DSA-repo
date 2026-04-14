@@ -24,6 +24,17 @@ long long minimumTotalDistance(vector<int>& robot, vector<vector<int>>& factory)
             long long res = solve(i, j + 1); // skip this factory
             
             long long cost = 0;
+              // try assigning k robots to this factory
+            for (int k = 0; k < factory[j][1] && i + k < n; k++) {
+                cost += abs(robot[i + k] - factory[j][0]);
+                res = min(res, cost + solve(i + k + 1, j + 1));
+            }
+            
+            return dp[i][j] = res;
+        };
+        
+        return solve(0, 0);
+    }
    
 int main(){
  
