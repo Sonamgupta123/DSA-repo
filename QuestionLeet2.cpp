@@ -5,7 +5,9 @@
 #include<deque>
 #include <unordered_map>
 using namespace std;
-
+ int closestTarget(vector<string>& words, string target, int startIndex) {
+        int n = words.size();
+        int ans = INT_MAX;
         
        
    
