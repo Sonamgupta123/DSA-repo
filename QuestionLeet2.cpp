@@ -21,6 +21,8 @@ using namespace std;
        
    
 int main(){
- 
+ vector<string> words = {"a","b","leetcode"};
+ string target = "leetcode";
+ int startIndex = 0 ;
     return 0;
 }
