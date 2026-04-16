@@ -13,6 +13,18 @@ using namespace std;
         for (int i = 0; i < n; i++) {
             mp[nums[i]].push_back(i);
         }
+        vector<int> ans;
+        
+        // Step 2: process each query
+        for (int q : queries) {
+            int val = nums[q];
+            auto &pos = mp[val];
+            
+            // If only one occurrence
+            if (pos.size() == 1) {
+                ans.push_back(-1);
+                continue;
+            }
        
    
 int main(){
