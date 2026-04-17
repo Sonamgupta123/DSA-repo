@@ -32,7 +32,9 @@ using namespace std;
     } 
    
 int main(){
-
+ vector<int>  nums = {};
+ int ans = minMirrorPairDistance(nums);
+ cout<<nums;
   return 0;
  }
    
