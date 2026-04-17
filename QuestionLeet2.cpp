@@ -19,7 +19,17 @@ using namespace std;
                 temp /= 10;
             }
 
-       
+       // check if reverse appeared before
+            if (mp.count(rev)) {
+                ans = min(ans, j - mp[rev]);
+            }
+
+            // store current index
+            mp[x] = j;
+        }
+
+        return (ans == INT_MAX) ? -1 : ans;
+    } 
    
 int main(){
 
