@@ -7,37 +7,7 @@
 using namespace std;
  
         
-        // Step 2: process each query
-        for (int q : queries) {
-            int val = nums[q];
-            auto &pos = mp[val];
-            
-            // If only one occurrence
-            if (pos.size() == 1) {
-                ans.push_back(-1);
-                continue;
-            }
-            // Binary search to find position of q
-            int idx = lower_bound(pos.begin(), pos.end(), q) - pos.begin();
-            
-            // Previous and next (circular)
-            int prev = (idx > 0) ? pos[idx - 1] : pos.back();
-            int next = (idx < pos.size() - 1) ? pos[idx + 1] : pos[0];
-            
-            // Circular distance function
-            auto dist = [&](int a, int b) {
-                int d = abs(a - b);
-                return min(d, n - d);
-            };
-            
-            int d1 = dist(q, prev);
-            int d2 = dist(q, next);
-            
-            ans.push_back(min(d1, d2));
-        }
-        
-        return ans;
-    }
+       
        
    
 int main(){
