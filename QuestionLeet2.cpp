@@ -12,7 +12,13 @@ using namespace std;
 
         for (int j = 0; j < nums.size(); j++) {
             int x = nums[j];     
-       
+       // reverse current number
+            int rev = 0, temp = x;
+            while (temp > 0) {
+                rev = rev * 10 + (temp % 10);
+                temp /= 10;
+            }
+
        
    
 int main(){
