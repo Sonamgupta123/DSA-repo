@@ -22,7 +22,10 @@ using namespace std;
     }
   
 int main(){
-
+ vector<int> nums1 = {};
+ vector<int> nums2 = {};
+ int ans = maxDistance(nums1 , nums2);
+ cout<<ans<<endl;
   return 0;
  }
    
