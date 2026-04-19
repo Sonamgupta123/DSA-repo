@@ -8,9 +8,7 @@ using namespace std;
  
   
 int main(){
- int n = 25 ;
- int ans = mirrorDistance(n);
- cout<<ans<<endl;
+
   return 0;
  }
    
