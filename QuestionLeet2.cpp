@@ -24,7 +24,9 @@ using namespace std;
     }
   
 int main(){
- 
+ vector<int> colors = {};
+ int ans = maxDistance(colors);
+ cout<<ans<<endl;
   return 0;
  }
    
