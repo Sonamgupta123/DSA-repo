@@ -30,6 +30,18 @@ using namespace std;
             // Count source values
             for (int idx : g.second)
                 freq[source[idx]]++;
+             // Match target values
+            for (int idx : g.second) {
+                if (freq[target[idx]] > 0) {
+                    freq[target[idx]]--;
+                } else {
+                    ans++; // mismatch
+                }
+            }
+        }
+
+        return ans;
+    }
   
 int main(){
  
