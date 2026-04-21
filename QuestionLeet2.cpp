@@ -58,8 +58,8 @@ vector<int> parent;
     }
   
 int main(){
- vector<int> source = {};
- vector<int> target = {};
+ vector<int> source = {1,2,3,4};
+ vector<int> target = {1,3,2,4};
  vector<vector<int>> allowedSwaps = {};
  int ans = minimumHammingDistance(source,target,allowedSwaps);
  cout<<ans<<endl; 
