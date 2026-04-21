@@ -5,6 +5,20 @@
 #include<deque>
 #include <unordered_map>
 using namespace std;
+vector<int> parent;
+
+    int find(int x) {
+        if (parent[x] != x)
+            parent[x] = find(parent[x]);
+        return parent[x];
+    }
+
+    void unite(int a, int b) {
+        int pa = find(a);
+        int pb = find(b);
+        if (pa != pb)
+            parent[pb] = pa;
+    }
    int minimumHammingDistance(vector<int>& source, vector<int>& target, vector<vector<int>>& allowedSwaps) {
         int n = source.size();
         parent.resize(n);
