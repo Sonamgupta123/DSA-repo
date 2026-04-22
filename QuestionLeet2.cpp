@@ -37,7 +37,7 @@ int main(){
  vector<string> queries = {"yes"};
  vector<string> dictionary ={"not"};
  vector<string> ans = twoEditWords(queries,dictionary);
- for(int val : ans){
+ for(string val : ans){
     cout<<val<<endl;
  }
   return 0;
