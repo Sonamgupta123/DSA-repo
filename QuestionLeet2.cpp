@@ -45,7 +45,11 @@ vector<long long> distance(vector<int>& nums) {
     }
  
 int main(){
-
+    vector<int> nums =  {};
+ vector<long long> ans = distance(nums);
+ for(long long val : ans){
+    cout<<val<<endl;
+ }
   return 0;
  }
    
