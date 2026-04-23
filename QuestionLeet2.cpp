@@ -15,6 +15,17 @@ vector<long long> distance(vector<int>& nums) {
         for(int i = 0; i < n; i++) {
             mp[nums[i]].push_back(i);
         }
+         // Step 2: process each group
+        for(auto &it : mp) {
+            vector<int> &v = it.second;
+            int m = v.size();
+            
+            vector<long long> prefix(m, 0);
+            prefix[0] = v[0];
+            
+            for(int i = 1; i < m; i++) {
+                prefix[i] = prefix[i-1] + v[i];
+            }
  
 int main(){
 
