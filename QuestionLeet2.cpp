@@ -26,6 +26,23 @@ vector<long long> distance(vector<int>& nums) {
             for(int i = 1; i < m; i++) {
                 prefix[i] = prefix[i-1] + v[i];
             }
+             for(int i = 0; i < m; i++) {
+                long long left = 0, right = 0;
+                
+                if(i > 0) {
+                    left = (long long)i * v[i] - prefix[i-1];
+                }
+                
+                if(i < m - 1) {
+                    right = (prefix[m-1] - prefix[i]) - (long long)(m - i - 1) * v[i];
+                }
+                
+                ans[v[i]] = left + right;
+            }
+        }
+        
+        return ans;
+    }
  
 int main(){
 
