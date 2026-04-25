@@ -68,11 +68,11 @@ bool canPlace(vector<long long>& pos, int k, long long dist, long long per) {
         return ans;
     }
 int main(){
-    vector<int> nums =  {0,5,3};
- vector<long long> ans = distance(nums);
- for(long long val : ans){
-    cout<<val<<endl;
- }
+int side = 2 ;
+vector<vector<int>> points = {{0,0},{0,1},{0,2},{1,2},{2,0},{2,2},{2,1}};
+int k = 5;
+int ans = maxDistance(side,points,k);
+cout<<ans<<endl;
   return 0;
  }
    
