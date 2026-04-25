@@ -29,6 +29,14 @@ bool canPlace(vector<long long>& pos, int k, long long dist, long long per) {
                 last = ext[idx];
                 count++;
             }
+              if (count == k) {
+                if (ext[idx] - ext[i] <= per - dist) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
  
 int main(){
     vector<int> nums =  {0,5,3};
