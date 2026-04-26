@@ -6,7 +6,7 @@
 #include <unordered_map>
 using namespace std;
 
-int m, n;
+ int m, n;
     
     bool dfs(vector<vector<char>>& grid, vector<vector<bool>>& visited,
              int x, int y, int px, int py) {
@@ -39,10 +39,28 @@ int m, n;
         return false;
     }
     
+    bool containsCycle(vector<vector<char>>& grid) {
+        m = grid.size();
+        n = grid[0].size();
+        
+        vector<vector<bool>> visited(m, vector<bool>(n, false));
+        
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (!visited[i][j]) {
+                    if (dfs(grid, visited, i, j, -1, -1))
+                        return true;
+                }
+            }
+        }
+        
+        return false;
+    }
        
     
 int main(){
-
+ vector<vector<char>> grid = {{"a","b","b"},{"b","z","b"},{"b","b","a"}};
+ bool ans = containsCycle(grid);
   return 0;
  }
    
