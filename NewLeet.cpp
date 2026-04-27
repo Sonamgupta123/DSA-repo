@@ -1,4 +1,5 @@
 #include<iostream>
+#include<queue>
 #include<vector>
 using namespace std;
  bool hasValidPath(vector<vector<int>>& grid) {
@@ -52,7 +53,7 @@ using namespace std;
     }
 
 int main(){
-   vector<vector<int>> grid = {{}};
+   vector<vector<int>> grid = {{1,1,2}};
    bool ans = hasValidPath(grid);
    cout<<ans<<endl;
 
