@@ -52,7 +52,9 @@ using namespace std;
     }
 
 int main(){
-   
+   vector<vector<int>> grid = {{}};
+   bool ans = hasValidPath(grid);
+   cout<<ans<<endl;
 
     return 0;
 }
