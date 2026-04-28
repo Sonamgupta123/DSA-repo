@@ -1,6 +1,7 @@
 #include<iostream>
 #include<queue>
 #include<vector>
+#include<algorithm>
 using namespace std;
   int minOperations(vector<vector<int>>& grid, int x) {
         vector<int> nums;
