@@ -17,6 +17,20 @@ using namespace std;
         for (int num : nums) {
             if (num % x != rem) return -1;
         }
+          // Step 3: Sort
+        sort(nums.begin(), nums.end());
+        
+        // Step 4: Choose median
+        int median = nums[nums.size() / 2];
+        
+        // Step 5: Count operations
+        int operations = 0;
+        for (int num : nums) {
+            operations += abs(num - median) / x;
+        }
+        
+        return operations;
+    }
 
 int main(){
   
