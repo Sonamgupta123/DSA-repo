@@ -33,11 +33,11 @@ using namespace std;
     }
 
 int main(){
-  vector<vector<int>> grid = {};
-  int x = ;
+  vector<vector<int>> grid = {{1,5},{2,3}};
+  int x = 1 ;
   int ans = minOperations(grid,x);
   cout<<ans<<endl;
-  
+
 
     return 0;
 }
