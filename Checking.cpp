@@ -1,3 +1,8 @@
+ #include<iostream>
+ #include<vector>
+ #include <queue>
+ #include<algorithm>
+ using namespace std;
  int maxPathScore(vector<vector<int>>& grid, int k) {
         int m = grid.size(), n = grid[0].size();
         
