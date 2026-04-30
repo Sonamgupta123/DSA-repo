@@ -53,8 +53,9 @@
         return ans;
     }
     int main(){
-        vector<vector<int>> grid = {};
-        int k = ;
-        int ans = maxPathScore()
+        vector<vector<int>> grid = {{0,1},{2,0}};
+        int k = 1 ;
+        int ans = maxPathScore(grid , k);
+        cout<<ans<<endl;
         return 0;
     }
