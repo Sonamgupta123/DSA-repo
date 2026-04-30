@@ -52,3 +52,9 @@
         
         return ans;
     }
+    int main(){
+        vector<vector<int>> grid = {};
+        int k = ;
+        int ans = maxPathScore()
+        return 0;
+    }
