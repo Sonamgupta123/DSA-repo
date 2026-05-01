@@ -14,7 +14,16 @@
             sum += nums[i];
             F += (long)i * nums[i];
         }
+         long maxVal = F;
         
+        // Step 2: compute F(k)
+        for (int k = 1; k < n; k++) {
+            F = F + sum - (long)n * nums[n - k];
+            maxVal = max(maxVal, F);
+        }
+        
+        return maxVal;
+    }
     int main(){
         
         return 0;
