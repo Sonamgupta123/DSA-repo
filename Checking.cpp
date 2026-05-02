@@ -25,6 +25,13 @@
 
                 num /= 10;
             }
+             if (valid && changed) {
+                count++;
+            }
+        }
+
+        return count;
+    }
     int main(){
        
     }
