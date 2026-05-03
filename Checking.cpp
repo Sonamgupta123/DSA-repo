@@ -10,5 +10,9 @@
 
               
     int main(){
+        string s = "";
+        string goal = "";
+        bool ans = rotateString(s , goal);
+        cout<<ans<<endl;
       return 0;
     }
