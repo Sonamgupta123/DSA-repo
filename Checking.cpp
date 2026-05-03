@@ -10,8 +10,8 @@
 
               
     int main(){
-        string s = "";
-        string goal = "";
+        string s = "abcde";
+        string goal = "cdeab";
         bool ans = rotateString(s , goal);
         cout<<ans<<endl;
       return 0;
