@@ -1,26 +1,36 @@
- #include<iostream>
- #include<vector>
- #include <queue>
- #include<algorithm>
- using namespace std;
-   void rotate(vector<vector<int>>& matrix) {
-        int n = matrix.size();
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
 
-        // Step 1: Transpose
-        for(int i = 0; i < n; i++) {
-            for(int j = i; j < n; j++) {
-                swap(matrix[i][j], matrix[j][i]);
-            }
-        }
+void rotate(vector<vector<int>>& matrix) {
+    int n = matrix.size();
 
-           // Step 2: Reverse each row
-        for(int i = 0; i < n; i++) {
-            reverse(matrix[i].begin(), matrix[i].end());
+    // Step 1: Transpose
+    for(int i = 0; i < n; i++) {
+        for(int j = i; j < n; j++) {
+            swap(matrix[i][j], matrix[j][i]);
         }
-    }    
-    int main(){
-       vector<vector<int>> matrix = {{1,2,3},{4,5,6},{7,8,9}};
-       void ans = rotate(matrix);
-       cout<<ans<<endl;
-      return 0;
     }
+
+    // Step 2: Reverse each row
+    for(int i = 0; i < n; i++) {
+        reverse(matrix[i].begin(), matrix[i].end());
+    }
+}
+
+int main(){
+    vector<vector<int>> matrix = {{1,2,3},{4,5,6},{7,8,9}};
+    
+    rotate(matrix);  // just call it
+
+    // Print rotated matrix
+    for(auto row : matrix){
+        for(auto val : row){
+            cout << val << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
