@@ -19,6 +19,17 @@ using namespace std;
                 }
             }
         }
+          // Step 2: Rotate matrix 90° clockwise
+        vector<vector<char>> result(n, vector<char>(m));
+        
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                result[j][m - 1 - i] = boxGrid[i][j];
+            }
+        }
+
+        return result;
+    }
 
 int main() {
    
