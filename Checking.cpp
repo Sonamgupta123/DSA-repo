@@ -1,15 +1,6 @@
 #include<iostream>
 using namespace std;
 
-// Definition of ListNode
-struct ListNode {
-    int val;
-    ListNode* next;
-    ListNode(int x) {
-        val = x;
-        next = NULL;
-    }
-};
 
 // Function to rotate list
 ListNode* rotateRight(ListNode* head, int k) {
