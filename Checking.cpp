@@ -32,6 +32,23 @@ using namespace std;
 
             int len = elems.size();
             int rot = k % len;
+             // Counter-clockwise rotation
+            vector<int> rotated(len);
+
+            for (int i = 0; i < len; i++) {
+                rotated[i] = elems[(i + rot) % len];
+            }
+
+            int idx = 0;
+
+            // fill top row
+            for (int j = left; j <= right; j++)
+                grid[top][j] = rotated[idx++];
+
+            // fill right column
+            for (int i = top + 1; i <= bottom - 1; i++)
+                grid[i][right] = rotated[idx++];
+
 
 int main() {
     
