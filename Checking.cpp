@@ -48,7 +48,16 @@ using namespace std;
             // fill right column
             for (int i = top + 1; i <= bottom - 1; i++)
                 grid[i][right] = rotated[idx++];
+   for (int j = right; j >= left; j--)
+                grid[bottom][j] = rotated[idx++];
 
+            // fill left column
+            for (int i = bottom - 1; i >= top + 1; i--)
+                grid[i][left] = rotated[idx++];
+        }
+
+        return grid;
+    }
 
 int main() {
     
