@@ -17,7 +17,11 @@ using namespace std;
 
         
 int main() {
-   
+   vector<int> nums = {13,25,83,77};
+   vector<int> ans  = separateDigits(nums);
+   for( x : ans){
+    cout<<x<<endl;
+   }
 
     return 0;
 }
