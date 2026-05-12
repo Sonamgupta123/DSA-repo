@@ -30,7 +30,7 @@ int minimumEffort(vector<vector<int>>& tasks) {
 
 
 int main() {
-   vector<vector<int>> tasks = {{}};
+   vector<vector<int>> tasks = {{1,2},{2,4},{4,8}};
    int ans = minimumEffort(tasks);
    cout<<ans<<endl;
     return 0;
