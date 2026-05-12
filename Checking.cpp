@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include<algorithm>
 using namespace std;
 int minimumEffort(vector<vector<int>>& tasks) {
 
@@ -29,6 +30,8 @@ int minimumEffort(vector<vector<int>>& tasks) {
 
 
 int main() {
-   
+   vector<vector<int>> tasks = {{}};
+   int ans = minimumEffort(tasks);
+   cout<<ans<<endl;
     return 0;
 }
