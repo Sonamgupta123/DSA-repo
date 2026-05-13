@@ -1,7 +1,8 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
-
+#include<climits>
+using namespace std;
 int minMoves(vector<int>& nums, int limit) {
         int n = nums.size();
         
@@ -39,8 +40,8 @@ int minMoves(vector<int>& nums, int limit) {
         return ans;
     }
     int main(){
-        vector<int> nums = {};
-        int limit = ;
+        vector<int> nums = {1,2,4,3};
+        int limit = 4 ;
         int ans = minMoves(nums,limit);
         cout<<ans<<endl;
         return 0;
