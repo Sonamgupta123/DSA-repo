@@ -39,5 +39,9 @@ int minMoves(vector<int>& nums, int limit) {
         return ans;
     }
     int main(){
+        vector<int> nums = {};
+        int limit = ;
+        int ans = minMoves(nums,limit);
+        cout<<ans<<endl;
         return 0;
     }
