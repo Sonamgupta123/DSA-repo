@@ -1,3 +1,7 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+
 int minMoves(vector<int>& nums, int limit) {
         int n = nums.size();
         
@@ -33,4 +37,7 @@ int minMoves(vector<int>& nums, int limit) {
         }
 
         return ans;
+    }
+    int main(){
+        return 0;
     }
