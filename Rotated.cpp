@@ -1,72 +1,76 @@
 #include <iostream>
 #include <vector>
+#include <unordered_map>
+#include <queue>
 
 using namespace std;
- int minJumps(vector<int>& arr) {
-        int n = arr.size();
-        if (n == 1) return 0;
 
-        // Store indices having same value
-        unordered_map<int, vector<int>> mp;
-        for (int i = 0; i < n; i++) {
-            mp[arr[i]].push_back(i);
-        }
+int minJumps(vector<int>& arr) {
+    int n = arr.size();
 
-        queue<int> q;
-        vector<bool> vis(n, false);
+    if (n == 1)
+        return 0;
 
-        q.push(0);
-        vis[0] = true;
+    unordered_map<int, vector<int>> mp;
 
-        int steps = 0;
-
-        while (!q.empty()) {
-            int sz = q.size();
-
-            while (sz--) {
-                int i = q.front();
-                q.pop();
-
-                // Reached last index
-                if (i == n - 1)
-                    return steps;
-
-                // i - 1
-                if (i - 1 >= 0 && !vis[i - 1]) {
-                    vis[i - 1] = true;
-                    q.push(i - 1);
-                }
-
-                // i + 1
-                if (i + 1 < n && !vis[i + 1]) {
-                    vis[i + 1] = true;
-                    q.push(i + 1);
-                }
-
-                // Same value jumps
-                for (int idx : mp[arr[i]]) {
-                    if (!vis[idx]) {
-                        vis[idx] = true;
-                        q.push(idx);
-                    }
-                }
-
-                // Clear to avoid repeated processing
-                mp[arr[i]].clear();
-            }
-
-            steps++;
-        }
-
-        return -1;
+    for (int i = 0; i < n; i++) {
+        mp[arr[i]].push_back(i);
     }
 
+    queue<int> q;
+    vector<bool> vis(n, false);
+
+    q.push(0);
+    vis[0] = true;
+
+    int steps = 0;
+
+    while (!q.empty()) {
+
+        int sz = q.size();
+
+        while (sz--) {
+
+            int i = q.front();
+            q.pop();
+
+            if (i == n - 1)
+                return steps;
+
+            // i - 1
+            if (i - 1 >= 0 && !vis[i - 1]) {
+                vis[i - 1] = true;
+                q.push(i - 1);
+            }
+
+            // i + 1
+            if (i + 1 < n && !vis[i + 1]) {
+                vis[i + 1] = true;
+                q.push(i + 1);
+            }
+
+            // same value jumps
+            for (int idx : mp[arr[i]]) {
+                if (!vis[idx]) {
+                    vis[idx] = true;
+                    q.push(idx);
+                }
+            }
+
+            mp[arr[i]].clear();
+        }
+
+        steps++;
+    }
+
+    return -1;
+}
 
 int main() {
 
     vector<int> nums = {2, 2, 2, 0, 1};
 
-    cout << "Minimum element: " << findMin(nums);
+    cout << "Minimum jumps: " << minJumps(nums);
 
     return 0;
 }
