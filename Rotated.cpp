@@ -116,15 +116,7 @@ using namespace std;
 
 
 int main() {
-   vector<vector<int>> queries = {
-        {1,2},
-        {2,3,3},
-        {2,3,1},
-        {2,2,2}
-    };
-
-    Solution sol;
-    vector<bool> ans = sol.getResults(queries);
+   
 
     for(bool x : ans)
         cout << (x ? "true" : "false") << " ";
